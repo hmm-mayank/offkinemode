@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky-High Airport Arrivals</title>
     <link async rel="stylesheet" href="./css/style.css">
+    <link async rel="stylesheet" href="./css/add.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,600,300italic,600italic" rel="stylesheet" type="text/css">
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#29BDBB">
@@ -27,6 +28,7 @@
 
                 // Checks if should display install popup notification:
                 if (isIos() && !isInStandaloneMode()) {
+
                     this.setState({ showInstallMessage: true });
                 }
         </script>
@@ -98,6 +100,7 @@
     </div>
     <script src="./js/build/vendor.min.js"></script>
     <script src="./js/build/script.min.js"></script>
+    <script src="./js/build/addtoscreen.js"></script>
 </body>
 
 </html>
